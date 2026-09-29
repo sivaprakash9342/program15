@@ -1,7 +1,5 @@
-SET SERVEROUTPUT ON;
-
 DECLARE
-    marks NUMBER := 65;
+    marks NUMBER := &marks;
 BEGIN
     IF marks >= 40 THEN
         DBMS_OUTPUT.PUT_LINE('PASS');
